@@ -6,7 +6,7 @@ mapper:
 }</code></pre>
 
 调用示例:
-<pre><code>return DbUtil.execute(new DbCallInterface<CustomerMapper,Integer>() {
+<pre><code>Integer result = DbUtil.execute(new DbCallInterface<CustomerMapper,Integer>() {
     @Override
     public Integer execute(CustomerMapper mapper) {
         return mapper.deleteCustomer(id);
