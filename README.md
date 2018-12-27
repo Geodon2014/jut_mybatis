@@ -1,5 +1,8 @@
 # MyBatis数据操作工具类 jut_mybatis
 MyBatis数据操作的工具类，封装了获取SqlSession，提交事务或回滚事务的逻辑。<br />
+
+使用时需要配置文件,路径如下:classpath:jut_mybatis/mybatis.cfg.xml
+
 mapper：
 <pre><code>public interface CustomerMapper {
     Integer deleteCustomer(Long id);
